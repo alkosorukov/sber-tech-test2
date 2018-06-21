@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        const str = {
+            str: "",
+            set(str) { this.str = str; return this },
+            get() { return this.str },
+            upper() {this.str = this.str.split('').reverse().join(''); return this },
+            reverse() { this.str = this.str.toUpperCase(); return this }
+
+        }
+
+
+        document.write(str.set("abc").upper().reverse().get())
+    </script>
+
+</body>
+
+</html>
